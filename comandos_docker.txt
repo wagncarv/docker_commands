@@ -1,0 +1,32 @@
+1 - docker run 'YOUR_CONTAINER' = cria e roda container
+2 - docker run 'YOUR_CONTAINER' echo Ola docker = cria e roda  container e exibir mensagem
+3 - docker run 'YOUR_CONTAINER' ls = lista o que está no container
+4 - docker run 'YOUR_CONTAINER' ls bin = lista o que está no container dentro da pasta bin
+5 - docker create busybox echo ola docker = cria container
+6 - docker start -a 'CONTAINER_HASH' = inicializa container
+7 - docker ps -a = exibe id dos containers
+8 - docker logs 'ID_CONTAINER' = exibe logs
+9 - docker run 'YOUR_CONTAINER' ping www.google.com = rodar imagem
+10 - docker stop 'ID_CONTAINER' = parar container
+11 - docker rm 'ID_CONTAINER' - remover container
+12 - docker ps -aq = listar IDS dos containers
+13 - docker rm $(docker ps -aq) = remover todos os containers
+14 - docker images = mostrar imagens
+15 - docker rmi 'ID_CONTAINER' = remover imagem
+16 - docker image -aq = exibir IDS container
+17 - docker rmi $(docker images -aq)
+18 - docker exec -it 'ID_CONTAINER' sh = executar processo dentro do container
+19 - docker exec -it a913abfe40be redis-cli = roda cliente redis no container docker
+20 - docker system prune = para todos os containers
+21 - docker network create --driver bridge pg-net = cria conexão com postgres banco de dados
+22 - docker network ls = lista todas as networks
+23 - docker run --name pg --network=pg-net -e "POSTGRES_PASSWORD=postgres" -p 5432:5432 -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data -d postgres
+-> OBSERVAÇÃO: 
+-e = variável de ambiente, 
+--name = nome dado ao container,
+-p = porta de acesso,
+-v = volume, tudo que tiver dentro de 'data' será mapeado para postgres.
+-d = detached, ou seja, rodar em 'background'
+24 - docker exec -it pg psql -U postgres = executar postgres dentro do docker.
+25 - docker start pg = iniciar estância postgres.
+26 - 
