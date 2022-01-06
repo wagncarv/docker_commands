@@ -29,4 +29,7 @@
 -d = detached, ou seja, rodar em 'background'
 24 - docker exec -it pg psql -U postgres = executar postgres dentro do docker.
 25 - docker start pg = iniciar estância postgres.
-26 - 
+26 - docker build . = contruir imagem à partir de dockerfile.
+27 - docker run -it alpine sh = executar criação de imagem no terminal manualmente:
+- apk add --update redis
+- docker commit -c 'CMD ["redis-server"]' IMAGE_ID
