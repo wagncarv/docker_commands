@@ -23,5 +23,6 @@
 7 - CMD ["node", "app.js"] = comando para inicializar aplicação
 8 - docker build <diretorio-da-imagem> . = constrói/gera imagem à partir de um 'Dockerfile'
 9 - docker image ls = listar todas as imagens
-10 - 
+10 - docker images = exibe todas as imagens
+11 - docker run -d -p 5000:3000 --name meu_node3 257049964fa3 = rodar imagem na porta 5000
 
