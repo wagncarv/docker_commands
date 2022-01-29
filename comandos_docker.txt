@@ -13,3 +13,15 @@
 12 - docker rm <id-container> = remove um container
 13 - docker rm <id-container> -f = remove um container mesmo em execução (remoção forçada)
 14 - docker
+=-------------- IMAGEM ------------------=
+1 - FROM <imagem> = imagem base
+2 - WORKDIR <dir> = diretório de execução
+3 - COPY <package> <dir> = copia arquivos para o diretório indicado
+4 - RUN <comando> = rodar comando
+5 - COPY . . = copiar tudo
+6 - EXPOSE <porta> = expõe porta indicada
+7 - CMD ["node", "app.js"] = comando para inicializar aplicação
+8 - docker build <diretorio-da-imagem> . = constrói/gera imagem à partir de um 'Dockerfile'
+9 - docker image ls = listar todas as imagens
+10 - 
+
