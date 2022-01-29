@@ -6,3 +6,4 @@
 5 - docker ps -a = exibe containers parados e em execução
 6 - docker container ls = exibe containers parados
 7 - docker container ls -a = exibe containers parados e em execução
+8 - docker stop <nome_imagem | id_imagem> = para execução do container
