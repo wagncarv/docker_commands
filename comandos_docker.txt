@@ -9,3 +9,6 @@
 8 - docker stop <nome_imagem | id_imagem> = para execução do container
 9 - docker start <nome_imagem | id_imagem> = reiniciar container
 10 - docker run --name <escolha-um-nome> <imagem>
+11 - docker logs <id-container> = exibe logs do container
+12 - docker -rm <id-container> = remove um container
+13 - docker -rm -f <id-container> = remove um container mesmo em execução (remoção forçada)
