@@ -1,3 +1,5 @@
+========================= CONTAINER =================================
+
 1 - docker run <imagem> = baixa imagem e roda container
 2 - docker run -it <imagem> = baixa imagem e roda container no modo interativo (terminal)
 2 - docker run -d <imagem> = baixa imagem e roda container em plano de fundo (background)
@@ -12,6 +14,12 @@
 11 - docker logs <id-container> = exibe logs do container
 12 - docker rm <id-container> = remove um container
 13 - docker rm <id-container> -f = remove um container mesmo em execução (remoção forçada)
+14 - docker run --rm <container> = roda container e o remove logo após
+15 - docker cp container_diferente2:/app/app.js ./copia/ = copia arquivo de container_diferente2 para outro local
+16 - docker top <container> = informações sobre execução de container
+17 - docker inspect <container> = exibe informações do container
+18 docker stats = exibe informações de todos os containers
+
 =-------------- IMAGEM ------------------=
 1 - FROM <imagem> = imagem base
 2 - WORKDIR <dir> = diretório de execução
@@ -30,4 +38,12 @@
 15 - docker tag <id-imagem> <novo-nome-da-imagem>:<nome-da-tag> = nomear imagem e adicionar tag
 16 - docker build -t <nomear-imagem> . = construir imagem com nome
 17 - docker rmi <imagem> = remove imagem
-18 - 
+18 - docker push <imagem> = enviar imagem para docker hub
+19 - 
+
+=========================== SYSTEM ==================================
+
+1 - docker system prune = remove imagens, conatiners, networks
+2 - docker login = entrar na conta docker hub
+3 - docker logout = sair da conta docker hub
+4 - 
