@@ -12,7 +12,6 @@
 11 - docker logs <id-container> = exibe logs do container
 12 - docker rm <id-container> = remove um container
 13 - docker rm <id-container> -f = remove um container mesmo em execução (remoção forçada)
-14 - docker
 =-------------- IMAGEM ------------------=
 1 - FROM <imagem> = imagem base
 2 - WORKDIR <dir> = diretório de execução
@@ -27,3 +26,8 @@
 11 - docker run -d -p 5000:3000 --name meu_node3 257049964fa3 = rodar imagem na porta 5000
 12 - docker pull <imagem> = baixar imagem do hub.docker
 13 - docker <comando> --help = ajuda com as opções do comando
+14 - docker tag <id-imagem> <novo-nome-da-imagem> = nomear imagem
+15 - docker tag <id-imagem> <novo-nome-da-imagem>:<nome-da-tag> = nomear imagem e adicionar tag
+16 - docker build -t <nomear-imagem> . = construir imagem com nome
+17 - docker rmi <imagem> = remove imagem
+18 - 
