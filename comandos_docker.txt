@@ -58,4 +58,5 @@
 5 - docker run -d -p 80:80 --name phpmessages_container -v phpvolume:/var/www/html/messages --rm phpmessages = rodar container nomeado na pasta do container, remover após parada
 6 - docker volume create <nome-do-volume> = criar volume manualmente
 7 - docker volume ls = listar todos os volumes
-8 - 
+8 - docker volume inspect <nome-do-volume> = inspecionar volume
+9 - docker volume rm <nome-do-volume> = remover volume
