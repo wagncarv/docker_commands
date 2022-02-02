@@ -46,4 +46,11 @@
 1 - docker system prune = remove imagens, conatiners, networks
 2 - docker login = entrar na conta docker hub
 3 - docker logout = sair da conta docker hub
-4 - 
+
+=========================== VOLUMES ==================================
+1 - Forma prática de gravar dados
+2 - Tipos de volumes: 
+    2.1 - anônimos (anonymous) = criados pela flag -v, nome aleatório
+    2.2 - nomeados (named) = volumes com nomes
+    2.3 - bind mounts - gravar dados na máquina, sem gerenciamento do docker.
+3 - 
