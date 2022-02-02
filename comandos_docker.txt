@@ -53,4 +53,6 @@
     2.1 - anônimos (anonymous) = criados pela flag -v, nome aleatório
     2.2 - nomeados (named) = volumes com nomes
     2.3 - bind mounts - gravar dados na máquina, sem gerenciamento do docker.
-3 - 
+3 - docker volume ls = exibe todos os volumes do ambiente
+4 - docker run -d -p 80:80 --name phpmessages_container --rm -v /data phpmessages = criar e iniciar container nomeado com volume anônimo na porta 80
+5 - 
