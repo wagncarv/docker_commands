@@ -11,7 +11,7 @@
     else {
         $filename = "msg-{$num_files}.txt";
     }
-    $file = fopen("./messages/{$filename}", "w");
+    $file = fopen("./messages/{$filename}", "w+");
 
     fwrite($file, $message);
     fclose($file);

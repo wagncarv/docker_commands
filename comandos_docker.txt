@@ -55,4 +55,5 @@
     2.3 - bind mounts - gravar dados na máquina, sem gerenciamento do docker.
 3 - docker volume ls = exibe todos os volumes do ambiente
 4 - docker run -d -p 80:80 --name phpmessages_container --rm -v /data phpmessages = criar e iniciar container nomeado com volume anônimo na porta 80
-5 - 
+5 - docker run -d -p 80:80 --name phpmessages_container -v phpvolume:/var/www/html/messages --rm phpmessages = rodar container nomeado na pasta do container, remover após parada
+6 - 
