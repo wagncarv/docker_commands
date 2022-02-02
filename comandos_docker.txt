@@ -60,3 +60,6 @@
 7 - docker volume ls = listar todos os volumes
 8 - docker volume inspect <nome-do-volume> = inspecionar volume
 9 - docker volume rm <nome-do-volume> = remover volume
+10 - docker volume prune = remover todos os volumes
+11 - docker run -v <nome-do-volume>:/data:ro = criar volume apenas leitura (read only)
+12 - 
