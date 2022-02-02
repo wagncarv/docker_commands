@@ -7,10 +7,11 @@
     <title>Mensagens</title>
 </head>
 <body>
-    <h1>Escreva sua mensagem</h1>
+    <h1>Bind mount</h1>
+    <h1>Escreva sua mensagem: bind mount!</h1>
     <form action="process.php" method="POST">
         <label for="message">Mensagem</label>
-        <input type="text" id="message" name="message">
+        <input type="text" id="message" name="message"><br/>
         <input type="submit" value="Enviar Mensagem">
     </form>
 </body>
