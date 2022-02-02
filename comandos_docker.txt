@@ -57,4 +57,5 @@
 4 - docker run -d -p 80:80 --name phpmessages_container --rm -v /data phpmessages = criar e iniciar container nomeado com volume anônimo na porta 80
 5 - docker run -d -p 80:80 --name phpmessages_container -v phpvolume:/var/www/html/messages --rm phpmessages = rodar container nomeado na pasta do container, remover após parada
 6 - docker volume create <nome-do-volume> = criar volume manualmente
-7 - 
+7 - docker volume ls = listar todos os volumes
+8 - 
