@@ -20,7 +20,8 @@
 17 - docker inspect <container> = exibe informações do container
 18 docker stats = exibe informações de todos os containers
 
-=-------------- IMAGEM ------------------=
+=========================== IMAGEM ==================================
+
 1 - FROM <imagem> = imagem base
 2 - WORKDIR <dir> = diretório de execução
 3 - COPY <package> <dir> = copia arquivos para o diretório indicado
@@ -48,6 +49,7 @@
 3 - docker logout = sair da conta docker hub
 
 =========================== VOLUMES ==================================
+
 1 - Forma prática de gravar dados
 2 - Tipos de volumes: 
     2.1 - anônimos (anonymous) = criados pela flag -v, nome aleatório
@@ -62,4 +64,15 @@
 9 - docker volume rm <nome-do-volume> = remover volume
 10 - docker volume prune = remover todos os volumes
 11 - docker run -v <nome-do-volume>:/data:ro = criar volume apenas leitura (read only)
-12 - 
+
+=========================== NETWORKS ==================================
+
+1 - Tipos de conexão: 1) externa, 2) com o host, 3) entre conatiners
+2 - Tipos de drivers: 1) bridge, 2) host, 3) macvlan, 4) none, 5) plugins
+3 - docker network ls = listar redes
+4 - docker network create <nome-da-rede> = criar uma rede
+5 - docker network create -d macvlan meumcvlan = criar nova rede com driver macvlan
+6 - docker network rm <nome-da-rede> = remover uma rede
+7 - docker network prune = remover redes não utilizadas
+8 - host.docker.internal = endereço local (localhost) container docker
+
