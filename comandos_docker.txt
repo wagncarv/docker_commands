@@ -75,4 +75,4 @@
 6 - docker network rm <nome-da-rede> = remover uma rede
 7 - docker network prune = remover redes não utilizadas
 8 - host.docker.internal = endereço local (localhost) container docker
-
+9 - docker run -d -p 3306:3306 --name mysql_api_container --rm --network flasknetwork -e MYSQL_ALLOW_EMPTY_PASSWORD=True mysqlapinetwork = rodar container para conectar-se em rede ao banco de dados
